@@ -6,8 +6,14 @@ CineRig is a filming add-on for World of Warcraft Retail. Walk or fly your chara
 
 1. Select your **Retail** installation in WowUp.
 2. Open **Get Addons → Install from URL**.
-3. Paste `https://github.com/CesarGrado/CineRig`, review **CineRig**, and click **Install**.
+3. Paste `https://github.com/CesarGrado/CineRig` and click **Import**. Review **CineRig** and click **Install**. WowUp can then check GitHub for future releases.
 4. Enable CineRig at character selection. Type `/cine` in game.
+
+If WowUp shows **Addon Installation Failed** when importing the repository, you can install 1.5.2 directly. Paste the following address into **Install from URL** and click **Import**, then **Install**. WowUp treats a direct ZIP as a one-time install.
+
+```text
+https://github.com/CesarGrado/CineRig/releases/download/v1.5.2/CineRig-1.5.2.zip
+```
 
 For manual installation, extract the attached CineRig ZIP from Releases into `_retail_/Interface/AddOns`. The TOC should be at `AddOns/CineRig/CineRig.toc`. The current release targets Retail 12.1.5, interface 120105.
 
