@@ -1,0 +1,141 @@
+CineRig 1.5.2 | World of Warcraft Retail | Windows and macOS
+
+Exit WoW. Unzip the CineRig folder into World of Warcraft/_retail_/Interface/AddOns.
+Verify AddOns/CineRig/CineRig.toc exists. Enable CineRig at character selection.
+For CineRig-driven camera moves, disable DynamicCam on the character and reload.
+
+RIG CONTROLS
+Type /cine rig to open four pages. Each page also opens by name.
+Motion     Set close and wide camera-distance marks and choose a pull speed.
+           Hold Glance left or right and release to return. For a repeating
+           move, choose a Shot, cycle count and turnaround hold, then Play.
+Playback   Select a named recording, set 0.25x–2x speed or reverse it.
+           Apply an In/Out range in seconds. Save excerpt creates a reusable
+           named copy. Reset playback returns to its full forward performance.
+Framing    Preview vertical 9:16, portrait 4:5 or square 1:1 with a matte.
+           Set action and title safe margins and an eyeline height. Apply
+           positions. Capture-safe and hidden UI suppress these guides.
+Markers    Start a log when you start recording. Bind Drop filming marker
+           for hidden-UI time stamps. Finish the log and select it to copy.
+           The clock measures time since Start log and runs independently of OBS.
+
+RECORD AND REUSE A MOVE ON A HIDDEN-UI WALK
+1. Bind Toggle walking session, Start or finish movement recording, Replay
+   selected movement recording and the Operator or Nudge controls you need.
+2. Frame the subject, release mouse-look and type /cine record Bridge pass.
+   Use an unused name. You can also enter the name in /cine recordings and
+   click Record movement. Press the walking key to hide the UI.
+3. Walk with the movement keys. Hold Pan right, release it, wait a beat,
+   then tap a tilt or zoom Nudge. The first gesture starts the clock.
+   Combined directions, ramps and pauses become part of the recording.
+4. Press the recording binding to finish and save. Finish recording in the
+   panel also saves a pre-named take. It saves automatically at 60 seconds.
+5. Frame another subject and press Replay selected movement recording, or
+   type /cine replay Bridge pass with the UI visible. Walk the route yourself.
+   Pan and tilt work from your current angle. A push-in needs room to zoom.
+
+Emergency Stop or manual camera takeover leaves a partial performance as a
+draft. Save it with /cine save Gate rehearsal before another move or reload.
+To name a take afterward, start with /cine record and finish with the same
+command or recording key. The library holds 24 movements across characters.
+Mouse-look, wheel zoom and character travel stay under your control. Start
+and stop your video recording in OBS.
+
+Open /cine presets before a hidden walk. Choose Look up and return for a
+first-person tilt under an arch, or Widening arc to pan right and pull back
+from a close third-person frame. Press Play while walking. The nine presets
+also include Glance, Whip pan and Sideways reveal in each direction, and
+Tower reveal. Append to timeline lets you edit their stages in Director.
+
+FILM A WALK
+1. In Options > Keybindings, bind CineRig's Toggle walking session and Stop.
+   Bind Toggle viewfinder mouse-look and the Nudge directions you want.
+   Scroll fully in for first person, or pull back to frame a third-person shot.
+   Set up your cursor and subject before rolling (see below).
+2. Press the walking key or type /cine walk. You can also click Walk with UI
+   hidden in the Shot tab. The UI hides. Check OBS, then start recording there.
+3. Walk, run, turn with the mouse and adjust the wheel normally. To hide the
+   on-screen pointer, hold your normal mouse-look button (right mouse by
+   default) or tap Toggle viewfinder mouse-look. Physically steer with the
+   mouse. Press the viewfinder key again to return the pointer. Stop and
+   ending the walk also release mouse-look that CineRig still owns.
+4. For a small pan, release mouse-look and tap a Nudge key while walking with
+   the movement keys. Hold an Operator key for a longer move. Native mouse
+   steering can take over from the rig while the walking UI stays hidden.
+5. Stop OBS, then press the walking key again. Stop, Restore or /cine reset
+   also ends the session. If CineRig hid the UI, it brings it back. If you hid
+   the UI yourself before walking, show it with WoW's Toggle User Interface.
+
+For a timed walk, use First-person walkthrough or Third-person walkthrough
+in Shot. Each gives you 15 seconds by default to steer and zoom freely. For a
+slow third-person pan as you walk with the movement keys, select Walking arc.
+OBS records your route. Named CineRig recordings capture Operator and Nudge
+camera commands.
+
+CURSOR AND CHARACTER
+For a free mouse during a pan, tilt or zoom, open /cine cursor and switch
+Hide free cursor (experimental) on for this login. Start /cine walk or play
+a capture-safe shot. Keep mouse-look off and use your camera keybindings.
+Move the mouse across bright scenery while you record all three directions.
+Check the clip with your usual OBS settings. Keep the game in the foreground.
+Stop or show the interface to recover your pointer.
+
+If WoW refuses a camera Stop or a cursor cleanup, press Restore. CineRig also
+retries outstanding cleanup when combat ends or you enter the world, while
+respecting any intervening camera or cursor handoff.
+
+This mode temporarily uses WoW's software pointer and a transparent image.
+The separate Hardware pointer on walks option is for capture sources that
+exclude hardware cursors. The free-cursor effect takes priority while active.
+
+For a third-person landscape without your character, frame the shot first.
+Open Monitor > Capture or /cine subject, click Hide character, then press
+Enter in chat to submit /console showPlayer 0. Escape cancels the draft.
+Check your character is out of frame. After the take, show the UI, click
+Show character and press Enter, or type /console showPlayer 1 and press
+Enter. This explicit Show step returns your character. Capture also reports
+your current perspective and distance.
+
+For the Stormwind reveal, bind Play and Restore. Type /cine. Stand still,
+zoom out several steps, frame the gate and choose Play shot. The reveal runs
+eight seconds after a three-second count. Reframe manually before replaying.
+Try Stop midway through a second take. After /reload the rig starts idle.
+
+SHOT       Choose a preset with < and >. Change duration, peak rate, direction,
+           ease or countdown. Push/pull changes camera distance.
+MOVES      Compose offers nine presets including Orbit and push, Rising
+           reveal and Descending push. Adjust Pan, Tilt and Distance
+           separately. Click a center value to zero it. Set duration and
+           easing, then Play shot. Use Director > Library > Save shot to keep
+           your version. In Nudges, set Travel to Micro, Small or Medium
+           and duration to 0.6, 1 or 1.6 seconds. The six one-tap bindings
+           pan left/right, tilt up/down, and push in/pull back.
+OPERATOR   Bind hold directions, precision and live speed. Use Arm, hold keys
+           to perform a move, release and let the ramp finish. Save take
+           replaces this character's one live slot. Replay after reframing.
+DIRECTOR   Add the selected shot to the timeline. Trim seconds from either end,
+           add a hold, select cut/ease, reorder, preview a segment or loop.
+           Library saves named shots/takes. Transfer copies authored takes.
+MONITOR    Rehearsal shows optional guides and take labels. Capture-safe hides
+           the game interface when you roll. A finished authored take or live
+           replay keeps the UI hidden for post-roll. Stop or Restore brings
+           back an interface CineRig hid. If you hid the UI with your native
+           Toggle User Interface binding, use that binding to show it again.
+
+Check the actual recording. Guides visible during rehearsal can appear in OBS.
+For a physical dolly, walk forward or backward. For a sideways tracking shot,
+use your strafe keys. Orbit your character in third person by holding an
+Operator pan key. For a crane rise, descent or flyover, mount before rolling,
+then pilot the path and altitude yourself where flight is available.
+
+This release targets Retail 12.1.5.70961, interface 120105. Check camera
+feel, collision, physical controls and cursor visibility in a short clip.
+Use /cine diag for the current build, supported axes, owner and recent errors.
+The companion source distribution includes README.md, the Retail smoke test,
+the API capability matrix, changelog, Lua tests and the packaging tool.
+
+To remove CineRig, Stop, Restore and use Show character + Enter if you hid
+your character. Exit WoW and move AddOns/CineRig out of the game.
+To roll back, restore your previous addon folder and its matching SavedVariables
+backup. WoW saves CineRig.lua in the account and character SavedVariables folders.
+Preserve both files if you want to keep your shots and live take.

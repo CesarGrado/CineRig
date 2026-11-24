@@ -1,0 +1,35 @@
+<Bindings>
+    <Binding name="CINERIG_PLAY" header="CINERIG">CineRig_Play()</Binding>
+    <Binding name="CINERIG_WALK" runOnUp="true">CineRig_WalkKey(keystate == "down")</Binding>
+    <Binding name="CINERIG_VIEWFINDER" runOnUp="true">CineRig_ViewfinderKey(keystate == "down")</Binding>
+    <Binding name="CINERIG_STOP">CineRig_Stop()</Binding>
+    <Binding name="CINERIG_RESTORE">CineRig_Restore()</Binding>
+    <Binding name="CINERIG_PAUSE">CineRig_Pause()</Binding>
+    <Binding name="CINERIG_PRECISION">CineRig_ToggleFine()</Binding>
+    <Binding name="CINERIG_LIVE_ARM">CineRig_LiveArm()</Binding>
+    <Binding name="CINERIG_LIVE_SAVE">CineRig_LiveSave()</Binding>
+    <Binding name="CINERIG_LIVE_REPLAY">CineRig_LiveReplay()</Binding>
+    <Binding name="CINERIG_RECORD_MOVEMENT" runOnUp="true">CineRig_RecordKey(keystate == "down")</Binding>
+    <Binding name="CINERIG_REPLAY_RECORDING" runOnUp="true">CineRig_ReplayRecordingKey(keystate == "down")</Binding>
+    <Binding name="CINERIG_GLANCE_LEFT" runOnUp="true">CineRig_GlanceKey("left", keystate == "down")</Binding>
+    <Binding name="CINERIG_GLANCE_RIGHT" runOnUp="true">CineRig_GlanceKey("right", keystate == "down")</Binding>
+    <Binding name="CINERIG_PULL_CLOSE">CineRig_PullMark("close")</Binding>
+    <Binding name="CINERIG_PULL_WIDE">CineRig_PullMark("wide")</Binding>
+    <Binding name="CINERIG_MARKER_CLOCK" runOnUp="true">CineRig_MarkerKey("clock", keystate == "down")</Binding>
+    <Binding name="CINERIG_DROP_MARKER" runOnUp="true">CineRig_MarkerKey("mark", keystate == "down")</Binding>
+    <Binding name="CINERIG_SLOWER">CineRig_SpeedStep(-1)</Binding>
+    <Binding name="CINERIG_FASTER">CineRig_SpeedStep(1)</Binding>
+    <Binding name="CINERIG_LEFT" runOnUp="true">CineRig_Hold("left", keystate == "down")</Binding>
+    <Binding name="CINERIG_RIGHT" runOnUp="true">CineRig_Hold("right", keystate == "down")</Binding>
+    <Binding name="CINERIG_UP" runOnUp="true">CineRig_Hold("up", keystate == "down")</Binding>
+    <Binding name="CINERIG_DOWN" runOnUp="true">CineRig_Hold("down", keystate == "down")</Binding>
+    <Binding name="CINERIG_IN" runOnUp="true">CineRig_Hold("in", keystate == "down")</Binding>
+    <Binding name="CINERIG_OUT" runOnUp="true">CineRig_Hold("out", keystate == "down")</Binding>
+    <Binding name="CINERIG_UI">CineRig_ToggleUI()</Binding>
+    <Binding name="CINERIG_NUDGE_LEFT" runOnUp="true">CineRig_NudgeKey("left", keystate == "down")</Binding>
+    <Binding name="CINERIG_NUDGE_RIGHT" runOnUp="true">CineRig_NudgeKey("right", keystate == "down")</Binding>
+    <Binding name="CINERIG_NUDGE_UP" runOnUp="true">CineRig_NudgeKey("up", keystate == "down")</Binding>
+    <Binding name="CINERIG_NUDGE_DOWN" runOnUp="true">CineRig_NudgeKey("down", keystate == "down")</Binding>
+    <Binding name="CINERIG_NUDGE_IN" runOnUp="true">CineRig_NudgeKey("in", keystate == "down")</Binding>
+    <Binding name="CINERIG_NUDGE_OUT" runOnUp="true">CineRig_NudgeKey("out", keystate == "down")</Binding>
+</Bindings>

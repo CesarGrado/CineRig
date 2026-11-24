@@ -1,0 +1,32 @@
+## Interface: 120105
+## Title: CineRig
+## Notes: Player-relative camera moves for live filming.
+## Author: CineRig
+## Version: 1.5.2
+## SavedVariables: CineRigDB
+## SavedVariablesPerCharacter: CineRigCharDB
+Adapter.lua
+DisplayAdapter.lua
+Core.lua
+Cursor.lua
+FreeCursor.lua
+Framing.lua
+Walk.lua
+Viewfinder.lua
+Panel.lua
+Nudges.lua
+Patterns.lua
+Moves.lua
+Operator.lua
+LiveTake.lua
+RecordingSession.lua
+Library.lua
+Director.lua
+Recordings.lua
+Monitor.lua
+MovementDesk.lua
+ReplayDesk.lua
+FrameDesk.lua
+Markers.lua
+Rig.lua
+Boot.lua
